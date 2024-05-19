@@ -1,14 +1,11 @@
-import { createStore } from 'vuex'
+import { createStore } from 'vuex';
 
-// import counterModule to
-// use in createStore()
-import counterModule from './modules/counter.js'
+import searchUsers from './modules/search-users.js';
 
 const store = createStore({
-  modules: {
-    counterMod: counterModule
-  }
+    modules: {
+        searchUsers,
+    }
 })
 
-// export store to use in main.js
 export default store
