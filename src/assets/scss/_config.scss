@@ -1,0 +1,46 @@
+@import './utils/functions';
+
+$screens: (
+    tablet: 768,
+    desktop: 1280,
+    desktopHuge: 1920,
+);
+
+$style-system-screens: (tablet, desktop, desktopHuge);
+
+// variables
+
+// static colors
+$color-alizarin-crimson: #e31f24;
+$color-mine-shaft: #333333;
+$color-black: #000000;
+$color-rolling-stone: #76787d;
+$color-quill-gray: #dededd;
+
+// dinamic colors
+$color-bright: $color-alizarin-crimson;
+$color-default-text: $color-mine-shaft;
+$color-black-text: $color-black;
+$color-additional-text: $color-rolling-stone;
+$color-border: $color-quill-gray;
+
+
+// static fonts
+$font-family-montserrat: "Montserrat";
+
+// dinamic fonts
+$font-family-primary: $font-family-montserrat, sans-serif;
+
+
+// static animations
+$transition-default: 0.2s ease-out;
+
+// dinamic animations
+$transition-actions: $transition-default;
+
+
+// static shadows
+$box-shadow-default: 0 0 rem(10) 0 #0000001A;
+
+// dinamic animations
+$box-shadow-card: $box-shadow-default;

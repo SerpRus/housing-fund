@@ -1,0 +1,59 @@
+@import './config';
+
+* {
+    box-sizing: border-box;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+body,
+html,
+.page {
+    height: 100%;
+}
+
+body,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, {
+    margin: 0;
+}
+
+body {
+    font-family: $font-family-primary;
+
+    color: $color-default-text;
+}
+
+button, input, select, textarea {
+    font-family: $font-family-primary;
+
+    outline: 0 none;
+
+    color: $color-default-text;
+    background-color: transparent;
+}
+
+button {
+    cursor: pointer;
+
+    color: inherit;
+    border: none;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+img {
+    max-width: 100%;
+}
