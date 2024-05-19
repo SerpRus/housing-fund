@@ -1,24 +1,21 @@
 <template>
-  <p>Counter: {{ trackCounter }}</p>
-  <button @click="incrementCounter">Increment</button>
+    <main class="page__main">
+        <search-users />
+    </main>
 </template>
 
 <script>
+import SearchUsers from '@/components/pages/search-users.vue';
+
 export default {
-  methods: {
-    incrementCounter() {
-      // specify 'counterMod' namespace
-      // before the action name
-      this.$store.dispatch('counterMod/increment', 1)
-    }
-  },
-  computed: {
-    trackCounter() {
-      // use getters as an array and specify
-      // 'counterMod' namespace with a slash
-      // before the getter method
-      return this.$store.getters['counterMod/getCounter']
-    }
-  }
+    components: {SearchUsers},
 }
 </script>
+
+<style lang="scss" scoped>
+.page {
+    &__main {
+        height: 100%;
+    }
+}
+</style>
